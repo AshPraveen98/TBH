@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Baker's House — Architecture & Design</title>
+  <meta name="description" content="Warm & homely architecture and interiors inspired by old French bakehouses. Design & turnkey delivery for homeowners and builders.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS (Animate on scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --cream:#F5E9DD;
+      --warm:#CFA06A;
+      --brown:#6B3F2A;
+      --muted:#8B6F61;
+      --accent:#D9B79B;
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial; margin:0; color:var(--brown); background:var(--cream); -webkit-font-smoothing:antialiased}
+    a{color:var(--brown); text-decoration:none}
+    header{background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(245,233,221,0.6)); backdrop-filter:blur(2px); position:sticky; top:0; z-index:40; border-bottom:1px solid rgba(107,63,42,0.06)}
+    .container{max-width:var(--max-width); margin:0 auto; padding:28px}
+
+    /* Nav */
+    .nav{display:flex; align-items:center; justify-content:space-between}
+    .brand{display:flex; align-items:center; gap:12px}
+    .brand img{width:56px; height:56px; border-radius:8px; object-fit:cover; border:3px solid var(--accent)}
+    .brand h1{font-family:'Playfair Display'; margin:0; font-size:18px; letter-spacing:0.4px}
+    .nav-links{display:flex; gap:18px; align-items:center}
+    .cta-btn{background:var(--brown); color:#fff; padding:10px 14px; border-radius:8px; font-weight:600}
+
+    /* Hero */
+    .hero{display:grid; grid-template-columns:1fr 420px; gap:30px; align-items:center; padding:48px 0}
+    .hero-left h2{font-family:'Playfair Display'; font-size:42px; margin:0 0 12px; color:var(--brown)}
+    .lead{color:var(--muted); font-size:16px; line-height:1.6}
+    .pill{display:inline-block; background:var(--accent); padding:6px 10px; border-radius:12px; font-weight:600; margin-bottom:18px}
+    .hero-cta{margin-top:22px}
+
+    /* Card */
+    .card{background:#fff; border-radius:12px; padding:18px; box-shadow: 0 6px 20px rgba(107,63,42,0.06)}
+
+    /* Portfolio */
+    .portfolio{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:30px}
+    .portfolio img{width:100%; height:200px; object-fit:cover; border-radius:8px}
+
+    /* Process */
+    .process{display:flex; gap:18px; margin-top:30px}
+    .step{flex:1; text-align:center}
+    .step h4{margin:8px 0 0}
+
+    /* Testimonials */
+    .testimonials{display:flex; gap:12px; margin-top:30px}
+    .testimonial{background:linear-gradient(180deg, rgba(255,255,255,0.9), #fff); padding:12px; border-radius:10px; flex:1}
+
+    /* Builder partners */
+    .partners{display:flex; gap:12px; align-items:center; justify-content:space-between; margin-top:18px}
+    .partner-logo{width:120px; height:50px; background:#fff; border-radius:6px; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 18px rgba(107,63,42,0.04)}
+
+    /* Contact */
+    form{display:grid; gap:10px}
+    input, textarea, select{padding:10px; border-radius:8px; border:1px solid rgba(107,63,42,0.12); font-size:15px}
+    .submit{background:var(--brown); color:#fff; padding:12px; border-radius:8px; border:none; font-weight:700; cursor:pointer}
+
+    /* Footer */
+    footer{padding:28px 0; margin-top:40px; border-top:1px dashed rgba(107,63,42,0.06)}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .portfolio{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:600px){
+      .portfolio{grid-template-columns:1fr}
+      .nav-links{display:none}
+    }
+
+    /* small flourish */
+    .tagline{font-family:'Playfair Display'; color:var(--warm); font-size:20px}
+    .sep{height:1px; background:linear-gradient(90deg, transparent, rgba(107,63,42,0.06), transparent); margin:22px 0}
+
+    /* floating whatsapp */
+    .whatsapp{position:fixed; right:18px; bottom:18px; background:#25D366; color:#fff; width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 12px 30px rgba(0,0,0,0.12); z-index:60}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=8c8d7b7b6f2d0a3a9a1e7d3fcd5b8f87" alt="logo placeholder">
+      <div>
+        <h1>The Baker's House</h1>
+        <div style="font-size:12px;color:var(--muted)">Architecture & Design</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#builders">Builders</a>
+      <a href="#contact" class="cta-btn">Get a Free Concept</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="container hero">
+    <div class="hero-left" data-aos="fade-up">
+      <div class="pill">Warm & Homely — French Bakehouse Inspiration</div>
+      <h2>Designs that smell like fresh bread and feel like home.</h2>
+      <p class="lead">We blend timeless architecture with warm, lived‑in interiors inspired by old French bakehouses — cosy materials, soft curves, and a palette that welcomes. Turnkey design & delivery for homeowners and builders.</p>
+
+      <div class="hero-cta">
+        <a href="#contact" class="cta-btn">Get My Free 3D Concept</a>
+      </div>
+
+      <div class="sep"></div>
+
+      <div style="display:flex;gap:12px">
+        <div class="card" style="flex:1">
+          <strong>Transparent pricing</strong>
+          <div style="font-size:14px;color:var(--muted);margin-top:6px">No hidden markups. Itemised material & labour details.</div>
+        </div>
+        <div class="card" style="flex:1">
+          <strong>45‑day delivery</strong>
+          <div style="font-size:14px;color:var(--muted);margin-top:6px">From concept to handover for standard apartments.</div>
+        </div>
+      </div>
+    </div>
+
+    <aside data-aos="zoom-in">
+      <div class="card">
+        <h3 style="margin-top:0;font-family:'Playfair Display'">Free 3D Concept</h3>
+        <p style="color:var(--muted);font-size:14px">Submit a few details and our architect will send a quick 3D concept for your living room.</p>
+        <form action="https://formsubmit.co/youremail@example.com" method="POST">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="tel" name="phone" placeholder="Phone / WhatsApp" required>
+          <select name="type">
+            <option value="1BHK">1BHK</option>
+            <option value="2BHK">2BHK</option>
+            <option value="3BHK">3BHK</option>
+            <option value="villa">Villa</option>
+          </select>
+          <button class="submit" type="submit">Request Concept</button>
+        </form>
+      </div>
+    </aside>
+  </section>
+
+  <section id="portfolio" class="container" data-aos="fade-up">
+    <h3 style="font-family:'Playfair Display'">Selected Projects</h3>
+    <div class="portfolio">
+      <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=7bc3b4a9e2fc3d2b4a4c9a3d2b6b8c9d" alt="project">
+      <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=5f7bd3b3f9f3b7c1d5e6f7a6c4b3a2d1" alt="project">
+      <img src="https://images.unsplash.com/photo-1505691723518-36a03b6e4f23?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a" alt="project">
+    </div>
+
+    <div style="margin-top:18px" class="process">
+      <div class="step card" data-aos="fade-up"><img src="https://images.unsplash.com/photo-1552664688-0a6d9a5a0f4a?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcdef" style="width:100px;height:100px;object-fit:cover;border-radius:8px"><h4>Consult</h4></div>
+      <div class="step card" data-aos="fade-up"><img src="https://images.unsplash.com/photo-1505691723518-36a03b6e4f23?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=123456" style="width:100px;height:100px;object-fit:cover;border-radius:8px"><h4>Design</h4></div>
+      <div class="step card" data-aos="fade-up"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=654321" style="width:100px;height:100px;object-fit:cover;border-radius:8px"><h4>Execute</h4></div>
+    </div>
+
+    <div class="testimonials">
+      <div class="testimonial" data-aos="fade-right">
+        <strong>"Our 2BHK feels like a warm pastry cafe now — the details are lovely."</strong>
+        <div style="font-size:13px;color:var(--muted);margin-top:8px">— Ritu, Chennai</div>
+      </div>
+      <div class="testimonial" data-aos="fade-left">
+        <strong>"Delivered on time. Transparent billing. Highly recommend."</strong>
+        <div style="font-size:13px;color:var(--muted);margin-top:8px">— Rahul, Mumbai</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="builders" class="container" data-aos="fade-up">
+    <h3 style="font-family:'Playfair Display'">Builder Partnerships</h3>
+    <p style="color:var(--muted)">We partner with small and mid-size builders to offer turnkey interior packages that increase sell-through and reduce handover friction. Options: retainer, cost-plus packages, co-branded show flats.</p>
+
+    <div class="partners">
+      <div class="partner-logo">Hettich</div>
+      <div class="partner-logo">Asian Paints</div>
+      <div class="partner-logo">Hafele</div>
+      <div class="partner-logo">CenturyPly</div>
+    </div>
+
+    <div style="margin-top:12px">
+      <a href="#contact" class="cta-btn">Partner With Us</a>
+    </div>
+  </section>
+
+  <section id="contact" class="container" data-aos="fade-up">
+    <h3 style="font-family:'Playfair Display'">Get in touch</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:12px">
+      <div>
+        <p style="color:var(--muted)">Tell us about your project and we'll propose a warm, budgeted concept within 48 hours. Free concept for living rooms.</p>
+        <ul style="color:var(--muted)">
+          <li>Phone / WhatsApp: <strong>+91 9XXXXXXXXX</strong></li>
+          <li>Email: <strong>hello@thebakershouse.in</strong></li>
+          <li>Location: <strong>Chennai / Mumbai (onsite by appointment)</strong></li>
+        </ul>
+
+        <div style="margin-top:18px">
+          <strong>Follow on</strong>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <form action="https://formsubmit.co/youremail@example.com" method="POST">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="tel" name="phone" placeholder="Phone / WhatsApp" required>
+            <input type="email" name="email" placeholder="Email (optional)">
+            <select name="project_type">
+              <option value="home">Home (Apartment)</option>
+              <option value="renovation">Renovation</option>
+              <option value="builder">Builder Partnership</option>
+            </select>
+            <textarea name="message" rows="4" placeholder="Tell us briefly about the space"></textarea>
+            <button type="submit" class="submit">Send enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div style="font-size:14px;color:var(--muted)">© The Baker's House — Architecture & Design • Built with love</div>
+        <div style="font-size:13px;color:var(--muted)">Designed for warm, homely interiors inspired by French bakehouses.</div>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<!-- WhatsApp floating -->
+<a class="whatsapp" href="https://wa.me/919XXXXXXXXX" target="_blank" aria-label="WhatsApp">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 .001 5.373 0 12c0 2.114.551 4.182 1.59 6.021L0 24l6.184-1.62A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.21-1.253-6.217-3.48-8.52zM12 21.6c-1.858 0-3.597-.5-5.148-1.437l-.369-.208-3.672.962.98-3.577-.24-.376A9.48 9.48 0 012.4 12c0-5.28 4.32-9.6 9.6-9.6 5.28 0 9.6 4.32 9.6 9.6 0 5.28-4.32 9.6-9.6 9.6z" fill="#fff"/><path d="M17.063 14.25c-.269-.135-1.588-.78-1.836-.869-.247-.09-.427-.135-.607.135-.18.27-.696.869-.854 1.048-.157.18-.314.202-.583.067-.27-.135-1.139-.419-2.169-1.335-.802-.715-1.344-1.6-1.502-1.87-.157-.27-.017-.415.118-.55.12-.12.27-.314.404-.47.135-.157.18-.27.27-.45.09-.18.045-.337-.022-.472-.067-.135-.607-1.467-.832-2.01-.219-.53-.442-.459-.607-.468l-.518-.01c-.18 0-.472.067-.72.337-.247.27-.94.92-.94 2.243 0 1.322.963 2.602 1.098 2.78.135.18 1.9 2.9 4.608 3.955 3.03 1.246 3.03.831 3.573.779.543-.045 1.764-.72 2.012-1.411.247-.69.247-1.282.173-1.411-.073-.135-.268-.202-.537-.337z" fill="#fff"/></svg>
+</a>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init({duration:700, once:true}); </script>
+
+</body>
+</html>
